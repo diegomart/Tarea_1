@@ -5,28 +5,17 @@ using System.Text;
 
 namespace tarea_1
 {
-    class Persona
-    {
-         public void leerDatos(){
+    
+         public void Persona{
 
-            Console.WriteLine("Nombre:");
-            string nombre =  Console.ReadLine();
-              Console.WriteLine("Telefono:");
-            string telefono =  Console.ReadLine();
-              Console.WriteLine("Email:");
-            string email =  Console.ReadLine();
-              Console.WriteLine("Domicilio:");
-            string domicilio =  Console.ReadLine();
+           leerDatos datos = new leerDatos();
+
+             datos.nombre();
+             datos.telefono();
+             datos.email();
+             datos.domicilio();
 
                      
         }
 
-        public static void Main (string[] args)
-		    {
-         Persona persona = new Persona();
-         Console.WriteLine("Nombre: "+ nombre);
-         Console.WriteLine("Nombre: "+ telefono);
-         Console.WriteLine("Nombre: "+ email);
-         Console.WriteLine("Nombre: "+ domicilo);
-}
-}
+     
